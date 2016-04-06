@@ -1,0 +1,19 @@
+group 'net.video.hunter'
+version project_version
+
+allprojects {
+    repositories {
+        mavenCentral()
+        maven { url "http://jcenter.bintray.com" }
+    }
+
+    buildscript {
+        repositories {
+            mavenCentral()
+            maven { url "http://jcenter.bintray.com" }
+        }
+        dependencies {
+            classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.1'
+        }
+    }
+}
